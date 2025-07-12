@@ -1,0 +1,388 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(Vazir.woff)
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+p {
+    color: #555;
+    direction: rtl;
+}
+.navbar {
+    background: radial-gradient(#fff,#ffd6d6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    border-bottom: groove;
+    z-index: 10;
+}
+.searchbar {
+    margin-top: 8px;
+    margin-left: 80px;
+}
+#searchicon {
+    transform: translateY(5px) translateX(32px);
+}
+.topnav input[type=text] {
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+    border-radius: 15px;
+    direction: rtl
+}
+.logo {
+    float: left;
+    max-width: 125px;
+    margin-left: 25px;
+}
+.logo img {
+    width: 125px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+    right: 0;
+    margin-right: 25px;
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.container{
+    
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+.matnbala {
+    padding-top: 100px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.matnpaeen {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.part1 {
+    padding-top: 100px;
+    flex-basis: 50%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.part1 img{
+    max-width: 500px;
+    border: groove;
+    border-radius: 20px;
+}
+.part2 > img {
+    padding-top: 100px;
+    max-width: 100%;
+    padding: 50px 0;
+}
+#dokmecart {
+    display: flex;
+    justify-content: space-around;
+}
+div#dokmecart {
+    width: 60%;
+}
+
+.header {
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.dokme {
+    display: inline-block;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.dokme:hover{
+    display: inline-block;
+    background-color: gold;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+.icon2 {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    direction: rtl;
+    cursor: pointer;
+}
+
+.tozihat {
+    direction: rtl;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#tozihat p {
+    margin-bottom: 20px;
+}
+
+#tozihat {
+    display: flex;
+    text-align: right;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rast {
+    flex-basis: 50%;
+}
+
+.chap {
+    flex-basis: 50%;
+}
+
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.fpart2 img {
+    width: 250px;
+}
+
+/* اسلاید شو خودکار */
+
+#slider {
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    animation: 15s slider infinite;
+}
+
+#slider figure p {
+    float: left;
+    width: 20%;
+    padding: 0px 500px 0px 500px;
+    font-size: 50px;
+}
+#slider figure img {
+    float: left;
+    width: 20%;
+    padding: 0px 500px 0px 500px;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+/* فلیپ کارد ها */
+
+.fazaasli {
+    padding: 150px 40px 40px 40px;
+    margin-top: auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flipcard {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin-bottom: 40px;
+}
+
+.flipcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipcard:hover .flipcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flipcard-front, .flipcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flipcard-front img {
+    width:300px;
+    height:300px;
+    object-fit: contain;
+}
+
+.flipcard-back {
+    background: radial-gradient(#ffd6d6, gold);
+    color: white;
+    transform: rotateY(180deg);
+    padding-top: 70px;
+}
+
+/* اسلاید شو دستی */
+
+.slider {
+    width: 100%;
+    max-width: 540px;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.slides {
+    display: flex;
+    width: 800%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    object-fit: contain;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    max-width: 540px;
+}
+
+.slide h1 {
+    text-align: center;
+    direction: rtl;
+}
+.slide a:hover {
+    text-align: center;
+    direction: rtl;
+    color: black;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    margin-top: 0px;
+    
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-12.5%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-25%);
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-37.5%);
+}
+
+#slide5:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+#slide6:checked ~ .slides {
+    transform: translateX(-62.5%);
+}
+
+#slide7:checked ~ .slides {
+    transform: translateX(-75%);
+}
+
+#slide8:checked ~ .slides {
+    transform: translateX(-87.5%);
+}
